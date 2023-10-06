@@ -10,3 +10,31 @@ body {
   font-size: 18px;
   font-family: "Rubik", sans-serif;
 }
+.big-container {
+  width: 90%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.content >* { 
+width: 100%;
+}
+
+main {
+  overflow: hidden;
+  margin: 2em 0;
+}
+
+.cards {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
