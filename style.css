@@ -7,34 +7,121 @@
 }
 
 body {
-  font-size: 18px;
+  background-color: hsl(226, 43%, 10%);
+  color: #fff;
   font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .big-container {
-  width: 90%;
-  max-width: 80rem;
-  margin-inline: auto;
-  padding-inline: 1em;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  row-gap: 1rem;
   align-items: center;
-  height: 100vh;
-}
-.content >* { 
-width: 100%;
+  justify-items: center;
+  margin: 3rem auto;
 }
 
-main {
-  overflow: hidden;
-  margin: 2em 0;
-}
-
-.cards {
+.profile-item {
   background-color: hsl(235, 46%, 20%);
-  border-radius: 0.5em;
-  margin-bottom: 1em;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 7rem;
+  width: 15rem;
 }
+.card-img {
+  max-width: 2.5rem;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  justify-self: end;
+}
+
+.profile {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 0.7rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row: 1/3;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 0.8rem;
+}
+.profile-data {
+  justify-self: start;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+
+.profile-data h3 {
+  font-weight: 300;
+}
+
+.profile-text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  font-size: small;
+  margin-left: 0.7rem;
+}
+
+.profile-text > p {
+  color: hsl(246, 80%, 60%);
+}
+
+.card {
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 75%;
+  height: 7rem;
+  width: 15rem;
+}
+.work {
+  background-color: hsl(15, 100%, 70%);
+}
+.play {
+  background-color: hsl(195, 74%, 62%);
+}
+.study {
+  background-color: hsl(348, 100%, 68%);
+}
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+.social {
+  background-color: hsl(264, 64%, 52%);
+}
+.selfCare {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.card-icon {
+  grid-column: 2/4;
+}
+
+.card-icon > img {
+  max-width: 3rem;
+  align-self: end;
+  justify-self: end;
+}
+.card-envelope{
+  background-color: hsl(235, 46%, 20%);
+    max-width: 15rem;
+    border-radius: 10px;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: .9rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
