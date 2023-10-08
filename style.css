@@ -119,8 +119,6 @@ a {
 
 .card-icon > img {
   max-width: 3rem;
-  align-self: end;
-  justify-self: end;
 }
 .card-envelope {
   background-color: hsl(235, 46%, 20%);
@@ -128,10 +126,34 @@ a {
   border-radius: 10px;
   grid-column: 1/4;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  padding: 0.9rem;
+  grid-template-columns: 1fr;
+  padding: 0.7rem;
 }
 
+.card-start {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: 400;
+  font-size: x-small;
+}
+
+.card-start > img {
+  width: 1rem;
+  margin-top: 0.5 rem;
+  justify-self: right;
+}
+.card-end {
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  font-weight: 300;
+  line-height: 1.5 rem;
+}
+.card-end p:nth-last-child(1) {
+  justify-self: right;
+  font-size: x-small;
+  color: hsl(236, 100%, 87%);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
